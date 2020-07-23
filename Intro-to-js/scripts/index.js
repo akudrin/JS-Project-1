@@ -12,3 +12,17 @@ console.log(header[0]);
 console.log(header);
 console.log(body);
 console.log(footer);
+
+//error handling
+try {
+  var fruit = new Fruit();
+} catch (e) {
+  console.log("ERROR: " + e.message);
+}
+console.log("rest of the code!");
+//custom error
+try {
+  throw new Error("Custom Developer Error!");
+} catch (e) {
+  console.log("ERROR: " + e.message);
+}
