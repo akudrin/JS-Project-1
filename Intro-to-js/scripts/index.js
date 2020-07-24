@@ -1,3 +1,7 @@
+//import { $ } from "../node_modules/jquery/dist/jquery.js";
+//import $ from "../node_modules/jquery/dist/jquery.js";
+//jQuery
+$.get("https://api.github.com/users/akudrin", (data) => console.log(data));
 var ResultContainer = document.getElementById("ResultContainer");
 ResultContainer.innerHTML = "Setting up the environment!";
 
@@ -26,3 +30,24 @@ try {
 } catch (e) {
   console.log("ERROR: " + e.message);
 }
+
+//HTTP request
+let request = new XMLHttpRequest();
+request.onreadystatechange = function () {
+  if (request.readyState == 4 && request.status == 200) {
+    console.log(request.response);
+  }
+};
+request.open("GET", "https://api.github.com/users/akudrin");
+request.send();
+
+//fetch API
+fetch("https://api.github.com/users/akudrin")
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+//promise
+let promise = $.get("https://api.github.com/users/msthakkar100");
+promise.then(
+  (data) => console.log(data),
+  (error) => console.log(error)
+);
