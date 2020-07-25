@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import MyComponentFunction from "./MyComponentFunction";
 import MyComponentClass from "./MyComponentClass";
 import MyComponentState from "./MyComponentState";
+import MyComponent2 from "./MyComponent2";
+import MyComponentEffectHook from "./MyComponentEffectHook";
 
 const ParaText = "Hello from React Again";
 ReactDOM.render(
@@ -16,6 +18,10 @@ ReactDOM.render(
     <p id="para1">{ParaText}</p>
     <br />
     <MyComponentState />
+    <br />
+    <MyComponent2 />
+    <br />
+    <MyComponentEffectHook />
   </React.Fragment>,
   document.getElementById("root")
 );

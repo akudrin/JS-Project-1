@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-function MyComponent(props) {
+function MyComponentEffectHook(props) {
   const [outputValue, setOutputValue] = useState("Placeholder");
   function UpdateText() {
     setOutputValue(document.getElementById("inputTextbox").value);
@@ -21,4 +21,4 @@ function MyComponent(props) {
     </div>
   );
 }
-export default MyComponent;
+export default MyComponentEffectHook;

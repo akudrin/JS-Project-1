@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-function MyComponentStateHook(props) {
+import { useChangeAlert } from "./useChangeAlert";
+function MyComponent2(props) {
   const [outputValue, setOutputValue] = useState("Placeholder");
   function UpdateText() {
-    setOutputValue(document.getElementById("inputTextbox").value);
+    setOutputValue(document.getElementById("inputTextbox2").value);
   }
+  useChangeAlert(`New Label2 Value: ${outputValue}`);
   return (
     <div>
-      <input id="inputTextbox"></input>
+      <input id="inputTextbox2"></input>
       <button type="button" onClick={UpdateText}>
         Update
       </button>
@@ -15,4 +17,4 @@ function MyComponentStateHook(props) {
     </div>
   );
 }
-export default MyComponentStateHook;
+export default MyComponent2;
