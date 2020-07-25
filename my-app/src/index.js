@@ -6,6 +6,7 @@ import MyComponentState from "./MyComponentState";
 import MyComponent2 from "./MyComponent2";
 import MyComponentEffectHook from "./MyComponentEffectHook";
 import MyDataComponent from "./MyDataComponent";
+import MyAxiosComponent from "./MyAxiosComponent";
 
 const ParaText = "Hello from React Again";
 ReactDOM.render(
@@ -25,6 +26,10 @@ ReactDOM.render(
     <MyComponentEffectHook />
     <br />
     <MyDataComponent />
+    <br />
+    <br />
+    <br />
+    <MyAxiosComponent />
   </React.Fragment>,
   document.getElementById("root")
 );
