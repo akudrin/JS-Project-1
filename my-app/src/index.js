@@ -1,4 +1,5 @@
 import React from "react";
+import "./Index.css";
 import ReactDOM from "react-dom";
 import MyComponentFunction from "./MyComponentFunction";
 import MyComponentClass from "./MyComponentClass";
