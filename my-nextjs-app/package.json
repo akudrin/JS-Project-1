@@ -1,0 +1,16 @@
+{
+  "name": "my-nextjs-app",
+  "version": "1.0.0",
+  "description": "\"My Next.js Application\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "next"
+  },
+  "author": "MT",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.5.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
