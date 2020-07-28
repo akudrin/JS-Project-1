@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import GetLink from "../SharedComponents/DynamicRouter";
 function MyComponent() {
   return (
     <div>
@@ -7,6 +8,9 @@ function MyComponent() {
       <Link href="/About">
         <a>About</a>
       </Link>
+      <GetLink title="Page 1"></GetLink>
+      <GetLink title="Page 2"></GetLink>
+      <GetLink title="Page 3"></GetLink>
     </div>
   );
 }
