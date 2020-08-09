@@ -7,7 +7,9 @@ import axios from "axios";
 class ReduxDemo extends React.Component {
   static async getInitialProps() {
     try {
-      const res = await axios.get("http://localhost:3000/api/TestAPI");
+      const res = await axios.get("http://localhost:3000/api/TestAPI", {
+        data: { query: `{ name, address }` },
+      });
       return { data: res.data, error: null };
     } catch (e) {
       return { data: "", error: e };
