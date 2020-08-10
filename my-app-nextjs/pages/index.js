@@ -1,4 +1,5 @@
 import React from "react";
+import "../Resources/style.css";
 class App extends React.Component {
   constructor(props) {
     super(props);
