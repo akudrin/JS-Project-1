@@ -1,0 +1,14 @@
+{
+  "name": "jest-testing-app",
+  "version": "1.0.0",
+  "description": "My Jest App",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.3.0"
+  }
+}
