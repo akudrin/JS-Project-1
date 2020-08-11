@@ -4,7 +4,9 @@
   "description": "\"My Next.js Application\"",
   "main": "index.js",
   "scripts": {
-    "start": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "MT",
   "license": "ISC",
