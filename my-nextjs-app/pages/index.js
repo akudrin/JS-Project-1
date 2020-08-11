@@ -16,10 +16,19 @@ class ReduxDemo extends React.Component {
     }
   }
 
+  static getAPIURL() {
+    if (process.env.NODE_ENV === "production") {
+      return process.env.URL_TestAPI_Prod;
+    } else {
+      return process.env.URL_TestAPI_Dev;
+    }
+  }
+
   render() {
     return (
       <div>
         <h1>Redux Demo</h1>
+        <h1>Hello from {process.env.NODE_ENV} server</h1>
         <br />
         <div className="center">
           <input id="inputTextbox" type="text"></input>
